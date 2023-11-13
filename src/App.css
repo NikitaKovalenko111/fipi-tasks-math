@@ -1,0 +1,17 @@
+.App {
+  text-align: center;
+}
+
+.grid-layout {
+  display: grid;
+  grid-template-areas: 'header'
+                       'content'
+                       'footer';
+  grid-template-rows: 67px calc(100% - 67px - 67px) 67px;
+  min-height: 100vh;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+}
