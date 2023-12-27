@@ -49,8 +49,6 @@ function* logoutSagaWorker() {
     try {
         const data: AxiosResponse<number> = yield call(usersAPI.logout)
 
-        console.log(data)
-
         if (data.data === 200) {
             yield put(RemoveUserDataAC())
 
